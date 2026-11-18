@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "UniEnabler 2.0 Demo",
+    "slug": "unienabler-2-demo",
+    "scheme": "unienablerdemo",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": { "package": "org.example.unienablerdemo" },
+    "web": { "name": "UniEnabler 2.0 Demo", "bundler": "metro" }
+  }
+}

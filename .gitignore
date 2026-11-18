@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+build/
+coverage/
+.DS_Store
+*.log
+.env
+.env.local
+apps/mobile/.env.local
+apps/api/data/dev-db.json
+apps/api/data/*.tmp
+*.sqlite
+*.sqlite-*

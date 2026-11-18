@@ -1,0 +1,27 @@
+{
+  "name": "unienabler-2-starter",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/mobile"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm:dev:api\" \"npm:web\"",
+    "dev:api": "npm run dev --workspace @unienabler/api",
+    "start:api": "npm run start --workspace @unienabler/api",
+    "dev:mobile": "npm run start --workspace @unienabler/mobile",
+    "web": "npm run web --workspace @unienabler/mobile",
+    "test": "npm run test --workspace @unienabler/api",
+    "typecheck": "npm run typecheck --workspace @unienabler/mobile",
+    "check": "npm run test && npm run typecheck"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "concurrently": "^10.0.7",
+    "playwright": "^1.65.1"
+  }
+}
